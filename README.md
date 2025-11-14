@@ -99,7 +99,7 @@ O diagrama abaixo ilustra o fluxo de uma requisição **POST** para a criação 
 *(O GitHub irá renderizar este bloco de código como um fluxograma)*
 ```mermaid
 graph TD
-    A[Cliente (Ex: Swagger)] -- "Requisição POST /api/v1/planos" --> B[API Controller]
+    A[Cliente (Swagger)] -- "Requisição POST /api/v1/planos" --> B[API Controller]
     B --> C{Valida os Dados (ModelState)}
     C -- "Válido" --> D[AppDbContext (EF Core)]
     D -- "Gera SQL (INSERT)" --> E[Banco de Dados (SQLite)]

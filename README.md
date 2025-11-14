@@ -99,14 +99,14 @@ O diagrama abaixo ilustra o fluxo de uma requisição **POST** para a criação 
 *(O GitHub irá renderizar este bloco de código como um fluxograma)*
 ```mermaid
 graph TD
-    A[Cliente (Ex: Swagger)] -- Requisição POST /api/v1/planos --> B[API Controller]
+    A[Cliente (Ex: Swagger)] -- "Requisição POST /api/v1/planos" --> B[API Controller]
     B --> C{Valida os Dados (ModelState)}
-    C -- Válido --> D[AppDbContext (EF Core)]
-    D -- Gera SQL (INSERT) --> E[Banco de Dados (SQLite)]
-    E -- Retorna Sucesso --> D
-    D -- Cria o objeto --> B
-    B -- Retorna 201 Created --> A
-    C -- Inválido --> F[Retorna 400 Bad Request]
+    C -- "Válido" --> D[AppDbContext (EF Core)]
+    D -- "Gera SQL (INSERT)" --> E[Banco de Dados (SQLite)]
+    E -- "Retorna Sucesso" --> D
+    D -- "Cria o objeto" --> B
+    B -- "Retorna 201 Created" --> A
+    C -- "Inválido" --> F[Retorna 400 Bad Request]
     F --> A
 ```
 

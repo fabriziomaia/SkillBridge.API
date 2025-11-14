@@ -1,0 +1,63 @@
+# Arquivos de configuração de IDEs e do Sistema
+# ---------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos específicos do Sistema Operacional
+# ---------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Linux
+.directory
+
+# Pastas de build do .NET (as mais importantes)
+# ---------------------------------------------
+**/[Bb]in/
+**/[Oo]bj/
+**/[Rr]elease/
+**/[Dd]ebug/
+
+# Arquivos de pacote do .NET
+# ---------------------------------------------
+*.nupkg
+*.snk
+*.sourcepublish
+packages/
+*.lock.json
+project.assets.json
+
+# Arquivos de Banco de Dados Locais (MUITO IMPORTANTE)
+# ---------------------------------------------
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Arquivos de Ferramentas Locais
+# ---------------------------------------------
+.config/
+dotnet-tools.json
+
+# Arquivos do Entity Framework
+# ---------------------------------------------
+*.efbundle
+
+# Segredos de Usuário
+# ---------------------------------------------
+**/secrets.json
+**/appsettings.Development.json
+
+# Logs
+# ---------------------------------------------
+logs/
+*.log
